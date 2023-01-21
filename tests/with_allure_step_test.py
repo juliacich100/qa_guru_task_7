@@ -10,8 +10,6 @@ from allure_commons.types import Severity
 @allure.feature("Issues in repo")
 @allure.story("With allure steps approach")
 @allure.link("https://github.com", name="Testing")
-
-
 def test_github_issue_name_with_allure_step():
     with allure.step('Open the main page'):
         browser.open('https://github.com')

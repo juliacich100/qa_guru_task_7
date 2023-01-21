@@ -3,14 +3,13 @@ from selene import be, by
 import allure
 from allure_commons.types import Severity
 
+
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
 @allure.label("owner", "juliacich100")
 @allure.feature("Issues in repo")
 @allure.story("No steps approach")
 @allure.link("https://github.com", name="Testing")
-
-
 def test_github_issue_name():
     browser.open('https://github.com')
 
